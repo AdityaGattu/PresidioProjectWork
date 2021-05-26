@@ -38,20 +38,15 @@ public class UserDAOImpl extends UserDAO{
 	}
 	@Override
 	public boolean checkUser(User userlogin) {
-//		User user=new User();
-//		Session session=sessionFactory.getCurrentSession();
-//		Query query=session.createQuery("from User where uname=:uname and upass=:upass");
-//		query.setParameter("uname", userlogin.getUname());
-//		query.setString("uname", userlogin.getUpass());
-//		Iterator it = query.iterate();
-//		while(it.hasNext())
-//		{
-//		user= (User)it.next();
-//		break;
-//		}
-		return true;
-		//else return false;
+		User user=new User();
+		Session session=sessionFactory.getCurrentSession();
+		Query query=session.createQuery("from User where uname=:uname");
+		query.setParameter("uname", userlogin.getUname());
 		
+		user=(User)query.uniqueResult();
+		if(user!=null && user.getUpass().equals(userlogin.getUpass()) )
+				{return true;}
+		else return false;
 	}
 	
 	@Override

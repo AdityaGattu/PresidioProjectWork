@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.model.BillingAddress;
 import com.model.Cart;
 import com.model.User;
 import com.service.CartService;
@@ -33,6 +34,7 @@ public class CartController {
 	public void addAttributes(Model model) {
 	    model.addAttribute("updatecartitem", new Cart());
 	    model.addAttribute("deletecartitem", new Cart());
+	    model.addAttribute("bill", new BillingAddress());
 	}
 	
 	@Autowired
@@ -64,12 +66,10 @@ public class CartController {
 	@Autowired
 	private UserService userservice;
 	
-	@RequestMapping(value = "generateinvoice", method = RequestMethod.GET)
+	@RequestMapping(value = "gotobilling", method = RequestMethod.GET)
 	public String invoice( Model model) {
-		  User u=new User();
-		  u=userservice.getloggedinuser();
 		  List<Cart>allitems = cartservice.getAllItems();
 		  model.addAttribute("allitems", allitems);
-		  return "invoice";
+		  return "billingform";
 	}
 }

@@ -50,14 +50,18 @@
 }
 
 footer {
-  margin-top : 950px;
-  text-align: center;
-  padding-top: 17px;
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   text-align: center;
+   padding-top: 17px;
   height : 60px;
   font-size : 17px;
   background-color: Black;
   color: white;
 }
+
 .setposition{
  margin-top : 25px;
  margin-left : 75px;
@@ -98,9 +102,9 @@ margin-bottom : 7px;
 		<h5 class="cardfont">
 		<form:label path="itemname">Horlicks</form:label><br/>
 		<div class="space"><form:label path="cost"> Rs.150/-</form:label><br/></div>
-        <form:hidden path = "itemid" value = "31" />
+        <form:hidden path = "itemid" value = "51" />
         <div class="space"><form:label path="qty"> Quantity : </form:label>
-        <form:input path="qty" value="0" style="width:20%"/><br/></div>
+        <form:input type="number" path="qty" value="0" style="width:20%" min="1" required="true"/><br/></div>
 		<div class="space"><input type="submit" value="Add To Cart" class="btn btn-primary"/></div>
 		</h5>
 	</form:form>
@@ -114,9 +118,9 @@ margin-bottom : 7px;
 		<h5 class="cardfont">
 		<form:label path="itemname">Olive Oil</form:label><br/>
 		<div class="space"><form:label path="cost"> Rs.200/-</form:label><br/></div>
-        <form:hidden path = "itemid" value = "32" />
+        <form:hidden path = "itemid" value = "52" />
         <div class="space"><form:label path="qty"> Quantity : </form:label>
-        <form:input path="qty" value="0" style="width:20%"/><br/></div>
+        <form:input type="number" path="qty" value="0" style="width:20%" min="1" required="true"/><br/></div>
 		<div class="space"><input type="submit" value="Add To Cart" class="btn btn-primary"/></div>
 		</h5>
 	</form:form>
@@ -130,9 +134,9 @@ margin-bottom : 7px;
 		<h5 class="cardfont">
 		<form:label path="itemname">CornFlakes</form:label><br/>
 		<div class="space"><form:label path="cost"> Rs.170/-</form:label><br/></div>
-        <form:hidden path = "itemid" value = "23" />
+        <form:hidden path = "itemid" value = "53" />
         <div class="space"><form:label path="qty"> Quantity : </form:label>
-        <form:input path="qty" value="0" style="width:20%"/><br/></div>
+        <form:input type="number" path="qty" value="0" style="width:20%" min="1" required="true"/><br/></div>
 		<div class="space"><input type="submit" value="Add To Cart" class="btn btn-primary"/></div>
 		</h5>
 	</form:form>
@@ -146,9 +150,9 @@ margin-bottom : 7px;
 		<h5 class="cardfont">
 		<form:label path="itemname">Rice</form:label><br/>
 		<div class="space"><form:label path="cost"> Rs.60/-</form:label><br/></div>
-        <form:hidden path = "itemid" value = "34" />
+        <form:hidden path = "itemid" value = "54" />
         <div class="space"><form:label path="qty"> Quantity : </form:label>
-        <form:input path="qty" value="0" style="width:20%"/><br/></div>
+        <form:input type="number" path="qty" value="0" style="width:20%" min="1" required="true"/><br/></div>
 		<div class="space"><input type="submit" value="Add To Cart" class="btn btn-primary"/></div>
 		</h5>
 	</form:form>

@@ -38,23 +38,33 @@
   transition: 0.8s;
 }
 
+.error{
+ 	font-size : 10px;
+ 	font-style: italic;
+	color: yellow !important;
+}
 
+.err{
+ 	font-size : 10px;
+ 	font-style: italic;
+	color: yellow !important;
+}
 </style>
 <body>
 
 <div class="signup-form">
       <h1 style="color:white;margin-top:70px;margin-bottom:20px;">Login</h1>
-            <form:form action="login" method="post" modelAttribute="userlogin">
+        <form:form action="login" method="post" modelAttribute="userlogin">
 	    <div style="color:white;font-size:25px;margin-top:45px;margin-bottom:20px;">
-		<form:label path="uname" >Username : </form:label>
-		<div style="color:white;font-size:25px;margin-top:15px;">
-        <form:input path="uname" /><br/>
+			<form:label path="uname" >Username : </form:label>
+			<div style="color:white;font-size:25px;margin-top:15px;">
+			<form:input path="uname" required="true"/><br/>
         </div>
         <form:label path="upass">Password :</form:label>
         <div style="color:white;font-size:25px;margin-top:15px;">
-        <form:input path="upass" /><br/>
+        	<form:input type="password" path="upass" required="true"/><br/>
         </div>
-	    </form:form>
+       </form:form>
 	   
         <input type="submit" value="Login" style="margin-top:30px"class="signup-btn"/>
      </div> 

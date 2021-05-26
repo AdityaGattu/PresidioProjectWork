@@ -46,14 +46,14 @@
 	    <div style="color:white;font-size:25px;margin-top:45px;margin-bottom:20px;">
 		<form:label path="uname" >Username : </form:label>
 		<div style="color:white;font-size:25px;margin-top:15px;">
-        <form:input path="uname" /><br/>
+        <form:input path="uname" required="true"/><br/>
         </div>
          <form:label path="upass">Password:</form:label>
         <div style="color:white;font-size:25px;margin-top:15px;">
-        <form:input path="upass" /><br/>
+        <form:input type="password" path="upass" required="true" /><br/>
+        
         </div>
 	    </form:form>
-	   
         <input type="submit" value="Register" style="margin-top:30px"class="signup-btn"/>
      </div> 
 	 </div>

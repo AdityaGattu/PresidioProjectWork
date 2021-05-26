@@ -9,6 +9,7 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
 import com.component.MyComponent;
 import com.model.User;
@@ -34,11 +35,8 @@ public class LoginController {
 	private UserService myservice;
 	
 	@RequestMapping(value = "login", method = RequestMethod.POST)
-	public String login( @ModelAttribute("userlogin") User userlogin,Model model) {
+	public String login(@ModelAttribute("userlogin") User userlogin,Model model) {
 		
-//		if (bindingResult.hasErrors()) {
-//			return "login";
-//		}
 		if(myservice.checkUser(userlogin)) {
 			return "welcome";
 		}

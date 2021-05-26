@@ -12,20 +12,22 @@ public class User {
 	@Id
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private int uid;
+	
+	
+	@Size(min = 3, max = 255, message = "Please enter between {min} and {max} characters.")
+	private String uname;
+	
+	@NotEmpty
+	private String upass;
+	
+	private int flag;
+	
 	public int getUid() {
 		return uid;
 	}
 	public void setUid(int uid) {
 		this.uid = uid;
 	}
-	//@NotEmpty
-	//@Size(min = 5, max = 255, message = "Please enter between {min} and {max} characters.")
-	private String uname;
-	//@NotEmpty
-	//@Size(min = 5, max = 255, message = "Please enter between {min} and {max} characters.")
-	private String upass;
-	
-	private int flag;
 	public int getFlag() {
 		return flag;
 	}

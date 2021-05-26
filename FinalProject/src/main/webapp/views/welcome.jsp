@@ -22,10 +22,16 @@
 	font-size : 10px;
 }	
 
+
+.container{
+	display:flex;
+	flex-direction: row;
+}
+
 .hero-image {
-  background-image: url("/images/shop.jpg");
-  background-color: #cccccc;
-  height: 617px;
+  float:left;
+  width:60%;
+  height: 590px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -34,23 +40,38 @@
 
 .hero-text {
   text-align: center;
+  margin-left:20%;
   position: absolute;
-  top: 50%;
-  left: 35%;
+  top: 51%;
+  left: 40%;
   transform: translate(-50%, -50%);
-  color: Black;
+  color: 21094e;
   
 }
 
 footer {
   text-align: center;
   padding-top: 17px;
-  height : 60px;
+  height : 59px;
   font-size : 17px;
   background-color: Black;
   color: white;
 }
 	
+.imge{
+	height:590px;
+	width :565px;
+	margin-left : 10px;
+	margin-top : 15px;
+	float : right;
+	background-image : url("/images/shopmain1.jpg");
+	background-size: contain;
+	background-color: black;
+}
+
+.clear{
+ clear:both;
+}
 </style>
 <body>
 
@@ -73,19 +94,22 @@ footer {
 	<div class="hero-image">
 		<div class="hero-text">
 			<h1 style="font-size:50px">Enjoy Deals!!</h1>
-			<h3 style="color:maroon;">Select your Category</h3>
-			<form:form action="shop1" method="get">
+			<h3 style=" margin: 20px;color:red;">Select your Category</h3>
+			<form:form style=" margin: 10px;" action="shop1" method="get">
 			<input type="submit" value="Vegetable Shop" class="btn btn-primary"/>
 			</form:form>
-			<form:form action="shop2" method="get">
+			<form:form style=" margin: 10px;" action="shop2" method="get">
 		<input type="submit" value="Fruit Shop" class="btn btn-primary" />
 	</form:form>
-	<form:form action="shop3" method="get">
+	<form:form action="shop3" style=" margin: 10px;" method="get">
 		<input type="submit" value="Grocery Shop" class="btn btn-primary"/>
 	</form:form>
 		</div>
 	</div>
 	</div>
+	
+	<div class="imge"></div>
+	<div class="clear"/>
 	<footer>
 		<p>PresidioOnlineStrore@shop.com</p>
 	</footer>

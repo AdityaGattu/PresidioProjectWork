@@ -100,7 +100,7 @@ margin-bottom : 7px;
 		<div class="space"><form:label path="cost"> Rs.40/-</form:label><br/></div>
         <form:hidden path = "itemid" value = "1" />
         <div class="space"><form:label path="qty"> Quantity : </form:label>
-        <form:input path="qty" value="0" style="width:20%"/><br/></div>
+        <form:input type="number" path="qty" value="0" style="width:20%" min="1" required="true"/><br/></div>
 		<div class="space"><input type="submit" value="Add To Cart" class="btn btn-primary"/></div>
 		</h5>
 	</form:form>
@@ -116,7 +116,7 @@ margin-bottom : 7px;
 		<div class="space"><form:label path="cost"> Rs.35/-</form:label><br/></div>
         <form:hidden path = "itemid" value = "2" />
         <div class="space"><form:label path="qty"> Quantity : </form:label>
-        <form:input path="qty" value="0" style="width:20%"/><br/></div>
+        <form:input type="number" path="qty" value="0" style="width:20%" min="1" required="true"/><br/></div>
 		<div class="space"><input type="submit" value="Add To Cart" class="btn btn-primary"/></div>
 		</h5>
 	</form:form>
@@ -132,7 +132,7 @@ margin-bottom : 7px;
 		<div class="space"><form:label path="cost"> Rs.40/-</form:label><br/></div>
         <form:hidden path = "itemid" value = "3" />
         <div class="space"><form:label path="qty"> Quantity : </form:label>
-        <form:input path="qty" value="0" style="width:20%"/><br/></div>
+        <form:input type="number" path="qty" value="0" style="width:20%" min="1" required="true"/><br/></div>
 		<div class="space"><input type="submit" value="Add To Cart" class="btn btn-primary"/></div>
 		</h5>
 	</form:form>
@@ -148,7 +148,7 @@ margin-bottom : 7px;
 		<div class="space"><form:label path="cost"> Rs.55/-</form:label><br/></div>
         <form:hidden path = "itemid" value = "4" />
         <div class="space"><form:label path="qty"> Quantity : </form:label>
-        <form:input path="qty" value="0" style="width:20%"/><br/></div>
+        <form:input type="number" path="qty" value="0" style="width:20%" min="1" required="true"/><br/></div>
 		<div class="space"><input type="submit" value="Add To Cart" class="btn btn-primary"/></div>
 		</h5>
 	</form:form>
@@ -164,7 +164,7 @@ margin-bottom : 7px;
 		<div class="space"><form:label path="cost"> Rs.50/-</form:label><br/></div>
         <form:hidden path = "itemid" value = "5" />
         <div class="space"><form:label path="qty"> Quantity : </form:label>
-        <form:input path="qty" value="0" style="width:20%"/><br/></div>
+        <form:input type="number" path="qty" value="0" style="width:20%" min="1" required="true"/><br/></div>
 		<div class="space"><input type="submit" value="Add To Cart" class="btn btn-primary"/></div>
 		</h5>
 	</form:form>
@@ -180,7 +180,7 @@ margin-bottom : 7px;
 		<div class="space"><form:label path="cost"> Rs.30/-</form:label><br/></div>
         <form:hidden path = "itemid" value = "6" />
         <div class="space"><form:label path="qty"> Quantity : </form:label>
-        <form:input path="qty" value="0" style="width:20%"/><br/></div>
+        <form:input type="number" path="qty" value="0" style="width:20%" min="1" required="true"/><br/></div>
 		<div class="space"><input type="submit" value="Add To Cart" class="btn btn-primary"/></div>
 		</h5>
 	</form:form>
@@ -197,7 +197,7 @@ margin-bottom : 7px;
 		<div class="space"><form:label path="cost"> Rs.60/-</form:label><br/></div>
         <form:hidden path = "itemid" value = "7" />
         <div class="space"><form:label path="qty"> Quantity : </form:label>
-        <form:input path="qty" value="0" style="width:20%"/><br/></div>
+        <form:input type="number" path="qty" value="0" style="width:20%" min="1" required="true"/><br/></div>
 		<div class="space"><input type="submit" value="Add To Cart" class="btn btn-primary"/></div>
 		</h5>
 	</form:form>
@@ -213,7 +213,7 @@ margin-bottom : 7px;
 		<div class="space"><form:label path="cost"> Rs.65/-</form:label><br/></div>
         <form:hidden path = "itemid" value = "8" />
         <div class="space"><form:label path="qty"> Quantity : </form:label>
-        <form:input path="qty" value="0" style="width:20%"/><br/></div>
+        <form:input type="number" path="qty" value="0" style="width:20%" min="1" required="true"/><br/></div>
 		<div class="space"><input type="submit" value="Add To Cart" class="btn btn-primary"/></div>
 		</h5>
 	</form:form>
